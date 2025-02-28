@@ -152,6 +152,23 @@ body { background: var(--white); }
   background: var(--yale-blue);
   border-color: var(--yale-blue);
 }
+.logo {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f0f0f0; /* Soft neutral color to complement background */
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 10px; /* Adds space between IKAAI and TRAVELS */
+}
+
+.logo span {
+  color: #b0c4de; /* Light steel blue, complements dark backgrounds */
+}
 
 .btn-secondary { border-color: var(--white); }
 
