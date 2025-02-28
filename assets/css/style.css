@@ -254,13 +254,79 @@ body { background: var(--white); }
 .header-top .logo { margin-inline: auto; }
 
 .header-top .logo img { max-width: 100px; }
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Push elements apart */
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px; /* Increase padding for better spacing */
+}
 
-.header-btn-group {
-  justify-self: flex-end;
+.logo {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white; /* Ensure visibility */
+  letter-spacing: 3px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--white);
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #FF5733; /* Highlight "TRAVELS" in orange */
+}
+
+.founder-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px; /* Adjust width as needed */
+  margin: auto; /* Centers the section */
+}
+
+.founder-img {
+  width: 150px; /* Adjust size */
+  height: 150px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  margin-bottom: 10px; /* Space between image and name */
+}
+
+.founder-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff; /* Adjust based on background */
+  margin-bottom: 5px;
+}
+
+.founder-description {
+  font-size: 14px;
+  color: #ccc; /* Lighter text color */
+}
+
+
+
+.header-btn-group {
+  display: flex;
+  gap: 15px; /* Adjust spacing between buttons */
+}
+
+.header-btn-group button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.header-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between icons */
 }
 
 .search-btn,
